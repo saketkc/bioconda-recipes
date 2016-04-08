@@ -10,6 +10,7 @@ package:
 
 build:
     number: 0
+    skip: True  # [osx]
     script_env:
         - MEME_ETC_DIR
 
