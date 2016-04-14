@@ -1,6 +1,7 @@
 #!/bin/bash
 #
 MEME_ETC_DIR=${PREFIX}/etc
+MEME_BIN_DIR=${PREFIX}/bin
 cpanm YAML
 cpanm HTML::PullParser
 cpanm XML::Simple
@@ -13,4 +14,6 @@ cpanm XML::Parser::Expat --configure-args "EXPATLIBPATH=$PREFIX/lib" --configure
 make clean
 make AM_CFLAGS='-DNAN="(0.0/0.0)"'
 MEME_ETC_DIR=${PREFIX}/etc
+MEME_BIN_DIR=${PREFIX}/bin
+make test
 make install

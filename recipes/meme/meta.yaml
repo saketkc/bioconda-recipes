@@ -12,6 +12,7 @@ build:
     skip: True  # [osx]
     script_env:
         - MEME_ETC_DIR
+        - MEME_BIN_DIR
 
 requirements:
     build:
