@@ -1,4 +1,4 @@
---- src/make-include.orig	2016-06-25 15:44:56.749214434 -0700
+--- src/make-include.mk	2016-06-25 15:44:56.749214434 -0700
 +++ src/make-include.mk	2016-06-25 15:45:11.217446713 -0700
 @@ -50,7 +50,7 @@
   #CFLAGS = -mcpu=opteron -O3
