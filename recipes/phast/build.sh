@@ -24,11 +24,11 @@ cp make.inc.example make.inc && make f2clib && make blaslib && make lib
 
 cd $SRC_DIR/src
 make CLAPACKPATH=$SRC_CLAPACK all
-mkdir -p $PREFIX/bin
 ls $PREFIX
 ls $PREFIX/bin
-cp -r $SRC_DIR/bin/* $PREFIX/bin
-cp -r $SRC_DIR/bin/* $PREFIX/
+#cp -r $SRC_DIR/bin/* $PREFIX/bin
+cp -r ../bin $PREFIX
+cp -r ../lib $PREFIX
 echo $PATH
 ls $PREFIX
 ls $PREFIX/bin

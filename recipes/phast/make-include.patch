@@ -1,11 +1,17 @@
---- src/make-include.mk	2016-06-25 15:44:56.749214434 -0700
-+++ src/make-include.mk	2016-06-25 15:45:11.217446713 -0700
-@@ -50,7 +50,7 @@
+--- src/make-include.mk	2013-03-17 20:15:07.000000000 -0700
++++ src/make-include.mk	2016-08-14 04:44:32.885907498 -0700
+@@ -45,12 +45,12 @@
+  #for debugging
+ # CFLAGS = -g -fno-inline -Wall -DPHAST_DEBUG
+  # for best performance
+- CFLAGS = -O3 
++ CFLAGS = -O3 -std=gnu99
+  # some other options
   #CFLAGS = -mcpu=opteron -O3
   #CFLAGS = -mcpu=pentiumpro -O3 
  else
 -  CFLAGS = -O3
-+  CFLAGS = -O3 -std-c99
++  CFLAGS = -O3 -std=gnu99
  endif
  
  PHAST_VERSION=\"$(shell cat ${PHAST}/version)\"
