@@ -3,11 +3,12 @@ package:
   version: "0.5.0"
 
 source:
-  fn: julia-0.5.0.tar.gz
-  url: https://github.com/JuliaLang/julia/releases/download/v0.5.0/julia-0.5.0-full.tar.gz
-  sha256: 732478536b6dccecbf56e541eef0aed04de0e6d63ae631b136e033dda2e418a9
+  fn: julia-0.5.0-linux-x86_64.tar.gz
+  url: https://julialang.s3.amazonaws.com/bin/linux/x64/0.5/julia-0.5.0-linux-x86_64.tar.gz
+  sha256: 5b18bbfcc39b2214ce5ec5d3c186aa39dbcab0bc465415353d44762fe14d1183
 
 build:
+  skip: True # [osx]
   rpaths:
     - lib/julia/
   number: 0
