@@ -26,7 +26,7 @@ requirements:
     - cryptography >=1.7.1
     - cycler >=0.10.0
     - enum34 >=1.1.6
-    - functools32 >=3.2.3.post2
+    - functools32 >=3.2.3.post2 #[not py27]
     - future >=0.16.0
     - idna >=2.2
     - ipaddress >=1.0.18
@@ -72,7 +72,7 @@ requirements:
     - cryptography >=1.7.1
     - cycler >=0.10.0
     - enum34 >=1.1.6
-    - functools32 >=3.2.3.post2
+    - functools32 >=3.2.3.post2 #[not py27]
     - future >=0.16.0
     - idna >=2.2
     - ipaddress >=1.0.18
