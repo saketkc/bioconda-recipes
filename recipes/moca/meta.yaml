@@ -57,7 +57,7 @@ requirements:
     - seaborn >=0.7.1
     - six >=1.10.0
     - statsmodels >=0.6.1
-    - subprocess32 >=3.2.7
+    - subprocess32 >=3.2.7 # [py27]
     - tqdm >=4.7.2
 
   run:
@@ -103,7 +103,7 @@ requirements:
     - seaborn >=0.7.1
     - six >=1.10.0
     - statsmodels >=0.6.1
-    - subprocess32 >=3.2.7
+    - subprocess32 >=3.2.7 # [py27]
     - tqdm >=4.7.2
 
 test:
