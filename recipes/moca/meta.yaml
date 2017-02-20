@@ -1,15 +1,14 @@
 package:
   name: moca
-  version: "0.3.4"
+  version: "0.4.2"
 
 source:
-  fn: moca-0.3.4.tar.gz
-  url: https://pypi.python.org/packages/1c/d1/6f35a10eda0d458c4c921756c0e4cd3dc11bac664023784e82dc8c1d0fb7/moca-0.3.4.tar.gz
-  md5: 8fc7a56a695bc339cc6b306f52ff6339
+  fn: moca-0.4.2.tar.gz
+  url: https://pypi.python.org/packages/4e/ce/eefbabd9875e2f7ea7ea46f7bdc7aca7b961f93d160d0a3819b3e4cc7214/moca-0.4.2.tar.gz
+  md5: fad51021892f84a55cdb375115fcb013
 
 build:
   # noarch_python: True
-  skip: True #[not py27]
   preserve_egg_dir: True
   entry_points:
     - moca=scripts.mocacli:cli
@@ -27,10 +26,9 @@ requirements:
     - cryptography >=1.7.1
     - cycler >=0.10.0
     - enum34 >=1.1.6
-    - functools32 >=3.2.3.post2
+    - functools32 >=3.2.3.post2 # [py27]
     - future >=0.16.0
     - idna >=2.2
-    - ipaddress >=1.0.18
     - matplotlib >=2.0.0
     - mmtf-python >=1.0.5
     - msgpack-python >=0.4.8
@@ -43,7 +41,6 @@ requirements:
     - pyasn1 >=0.1.9
     - pybedtools >=0.7.9
     - pybigwig >=0.2.8
-    - pycairo >=1.10.0 # [linux]
     - pycparser >=2.17
     - pyparsing >=2.1.4
     - pysam >=0.9.1.4
@@ -58,9 +55,8 @@ requirements:
     - seaborn >=0.7.1
     - six >=1.10.0
     - statsmodels >=0.6.1
-    - subprocess32 >=3.2.7
+    - subprocess32 >=3.2.7 # [py27]
     - tqdm >=4.7.2
-
   run:
     - python
     - setuptools
@@ -73,10 +69,9 @@ requirements:
     - cryptography >=1.7.1
     - cycler >=0.10.0
     - enum34 >=1.1.6
-    - functools32 >=3.2.3.post2
+    - functools32 >=3.2.3.post2 # [py27]
     - future >=0.16.0
     - idna >=2.2
-    - ipaddress >=1.0.18
     - matplotlib >=2.0.0
     - mmtf-python >=1.0.5
     - msgpack-python >=0.4.8
@@ -89,7 +84,6 @@ requirements:
     - pyasn1 >=0.1.9
     - pybedtools >=0.7.9
     - pybigwig >=0.2.8
-    - pycairo >=1.10.0 # [linux]
     - pycparser >=2.17
     - pyparsing >=2.1.4
     - pysam >=0.9.1.4
@@ -104,8 +98,9 @@ requirements:
     - seaborn >=0.7.1
     - six >=1.10.0
     - statsmodels >=0.6.1
-    - subprocess32 >=3.2.7
+    - subprocess32 >=3.2.7 # [py27]
     - tqdm >=4.7.2
+
 
 test:
   # Python imports
